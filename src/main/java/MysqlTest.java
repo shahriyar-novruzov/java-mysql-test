@@ -8,6 +8,7 @@ public class MysqlTest {
 
     public static void main(String[] args) {
 
+        System.out.println("starting main");
         Connection connection = null;
 
         try {
@@ -17,7 +18,7 @@ public class MysqlTest {
 
             Statement statement = connection.createStatement();
 
-            ResultSet resultSet = statementg
+            ResultSet resultSet = statement
                     .executeQuery("select * from developia.students");
 
             while (resultSet.next()) {
